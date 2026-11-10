@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simulación de líneas de transmisión: parámetros primarios y secundarios, barridos de frecuencia, gráficas interactivas y exportación CSV.">
+  <title>Simulador de Líneas de Transmisión</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-wave" viewBox="0 0 24 24"><path d="M2 13h3l2.5-8 4 15 3.5-11 2 4H22"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2.8v2.6M12 18.6v2.6M2.8 12h2.6M18.6 12h2.6M5.5 5.5l1.8 1.8M16.7 16.7l1.8 1.8M18.5 5.5l-1.8 1.8M7.3 16.7l-1.8 1.8"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.5v.5"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5z"/></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8.5 7.5h7M8.5 12h.5M12 12h.5M15.5 12h.5M8.5 16h.5M12 16h.5M15.5 16h.5"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 20h18M5 16l4.5-5 3.5 3L20 6"/></symbol>
+  <symbol id="i-bars" viewBox="0 0 24 24"><path d="M5 20V11M10 20V5M15 20v-7M20 20V8"/></symbol>
+  <symbol id="i-grid" viewBox="0 0 24 24"><rect x="3.5" y="4.5" width="17" height="15" rx="2"/><path d="M3.5 10h17M3.5 14.5h17M9.5 10v9.5"/></symbol>
+  <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6.5h11M9 12h11M9 17.5h11M4.5 6.5h.5M4.5 12h.5M4.5 17.5h.5"/></symbol>
+  <symbol id="i-gauge" viewBox="0 0 24 24"><path d="M4 17a8.5 8.5 0 1 1 16 0M12 14l4-5"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.5C10 5 7 4.5 4 5v13c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V5c-3-.5-6 0-8 1.5zM12 6.5v13"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 4l9 4.5-9 4.5-9-4.5zM3 13l9 4.5 9-4.5"/></symbol>
+  <symbol id="i-ruler" viewBox="0 0 24 24"><path d="M3.5 16.5l13-13 4 4-13 13zM7.5 12.5l1.5 1.5M10.5 9.5l1.5 1.5M13.5 6.5l1.5 1.5"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7.5 11l4.5 4.5 4.5-4.5M5 20h14"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M13.5 6.5L19 12l-5.5 5.5"/></symbol>
+  <symbol id="i-reset" viewBox="0 0 24 24"><path d="M4.5 12a7.5 7.5 0 1 0 2.4-5.5M4.5 4.5v4h4"/></symbol>
+</svg>
+<header class="topbar">
+  <a class="brand" href="./" aria-label="LINEALAB, inicio"><svg class="icon brand-mark"><use href="#i-wave"/></svg><span>LINEA<span class="brand-light">LAB</span></span></a>
+  <div class="top-title"><h1>Simulador de Líneas de Transmisión</h1><p class="subtitle">Análisis de parámetros primarios y secundarios</p></div>
+  <div class="top-actions">
+    <a id="about-link" class="top-link" href="#about"><svg class="icon"><use href="#i-info"/></svg><span>Acerca de</span></a>
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false" aria-label="Activar modo oscuro"><svg class="icon"><use href="#i-moon"/></svg><span id="theme-label">Modo oscuro</span><span class="switch" aria-hidden="true"></span></button>
+  </div>
+</header>
+<main>
+  <div class="workspace">
+    <aside class="panel configuration"><div class="panel-heading"><svg class="icon section-icon"><use href="#i-gear"/></svg><h2>Configuración</h2></div>
+      <form id="configuration-form" novalidate>
+        <div class="form-section"><h3>Tipo de línea</h3><div class="line-selector" role="group" aria-label="Tipo de línea">
+          <button type="button" class="line-option active" data-type="bifilar" aria-pressed="true"><svg class="type-icon" viewBox="0 0 40 24" aria-hidden="true"><circle cx="11" cy="12" r="6.5"/><circle cx="29" cy="12" r="6.5"/></svg><span>Bifilar</span></button>
+          <button type="button" class="line-option" data-type="coaxial" aria-pressed="false"><svg class="type-icon" viewBox="0 0 40 24" aria-hidden="true"><circle cx="20" cy="12" r="9.5"/><circle class="solid" cx="20" cy="12" r="3.5"/></svg><span>Coaxial</span></button>
+          <button type="button" class="line-option" data-type="placas" aria-pressed="false"><svg class="type-icon" viewBox="0 0 40 24" aria-hidden="true"><path d="M7 8h26M7 16h26"/></svg><span>Placas paralelas</span></button>
+        </div></div>
+        <div class="form-section"><h3>Condiciones de operación</h3><label for="frequency">Frecuencia de operación</label><div class="input-with-unit"><input id="frequency" name="frequency" type="number" min="0" step="any" value="100" required aria-describedby="frequency-error"><select id="frequency-unit" name="frequencyUnit" aria-label="Unidad de frecuencia"><option>Hz</option><option>kHz</option><option selected>MHz</option><option>GHz</option></select></div><small class="error" id="frequency-error"></small>
+          <label for="conductor">Material del conductor</label><select id="conductor" name="conductor"><option value="cobre">Cobre</option><option value="aluminio">Aluminio</option><option value="plata">Plata</option><option value="oro">Oro</option></select>
+          <label class="sub-label" for="conductivity">Conductividad σc</label><div class="input-with-unit"><input id="conductivity" name="conductivity" type="number" min="0" step="any" value="58000000" required aria-describedby="conductivity-help conductivity-error"><span class="unit">S/m</span></div><small class="field-help" id="conductivity-help">Valor aproximado a 20 °C. Editable.</small><small class="error" id="conductivity-error"></small>
+          <label for="dielectric">Material dieléctrico</label><select id="dielectric" name="dielectric"><option value="aire">Aire</option><option value="vacio">Vacío</option><option value="ptfe">PTFE (teflón)</option><option value="polietileno">Polietileno</option></select>
+          <div class="material-fields"><div><label class="sub-label" for="relativePermittivity">Permitividad εr</label><input id="relativePermittivity" name="relativePermittivity" type="number" min="0" step="any" value="1.0006" required aria-describedby="dielectric-help relativePermittivity-error"><small class="error" id="relativePermittivity-error"></small></div><div><label class="sub-label" for="lossTangent">Pérdidas tanδ</label><input id="lossTangent" name="lossTangent" type="number" min="0" step="any" value="0" required aria-describedby="dielectric-help lossTangent-error"><small class="error" id="lossTangent-error"></small></div></div>
+          <small class="field-help" id="dielectric-help">Valores iniciales orientativos, no dispersivos. Cambiar de material carga sus valores; puedes editarlos según la ficha real.</small>
+        </div>
+        <div class="form-section"><div class="section-label"><h3>Dimensiones</h3><span>en mm</span></div><div id="geometry-fields"></div><label for="length">Longitud de la línea (L)</label><div class="input-with-unit"><input id="length" name="length" type="number" min="0" step="any" value="1" required aria-describedby="length-error length-help"><span class="unit">m</span></div><small class="error" id="length-error"></small><small class="field-help" id="length-help">R′, L′, C′ y G′ son por metro; no se multiplican por esta longitud.</small></div>
+        <div class="form-actions"><button class="calculate" type="submit"><svg class="icon"><use href="#i-calc"/></svg><span>Calcular</span><svg class="icon arrow"><use href="#i-arrow"/></svg></button><button id="generate-analysis-side" class="outline-button" type="button"><svg class="icon"><use href="#i-chart"/></svg><span>Generar análisis de frecuencia</span></button><button class="reset" type="reset"><svg class="icon"><use href="#i-reset"/></svg><span>Restablecer</span></button><p id="form-status" class="form-status" role="status" aria-live="polite">Configura la línea para comenzar.</p></div>
+      </form>
+    </aside>
+    <div class="results-area">
+      <section id="model-hero" class="hero" aria-labelledby="diagram-title">
+        <div class="hero-main">
+          <div class="diagram-copy"><p class="eyebrow">Modelo geométrico</p><h2 id="diagram-title">Línea bifilar</h2><p id="diagram-description">Dos conductores paralelos separados por un medio dieléctrico.</p><span class="diagram-tag">Modelo TEM ideal</span></div>
+          <div class="hero-visual">
+            <div id="viewer-stage" class="stage" hidden><canvas id="viewer-canvas" role="img" aria-label="Modelo tridimensional de la línea configurada"></canvas><svg id="viewer-leaders" class="leaders" aria-hidden="true"></svg><div id="viewer-callouts"></div><p id="viewer-note" class="stage-note" hidden>Dimensiones no válidas: corrige los valores para ver el modelo.</p><button id="viewer-expand" class="stage-expand" type="button" aria-pressed="false">Ampliar visor</button></div>
+            <div id="line-illustration" class="line-illustration" aria-hidden="true"></div>
+            <p id="viewer-scale-note" class="stage-caption" hidden></p>
+          </div>
+          <figure class="tech-drawing"><div id="line-diagram" class="line-diagram"></div><figcaption id="diagram-scale-note">Sección transversal.</figcaption></figure>
+        </div>
+        <div id="viewer-bar" class="viewbar" hidden>
+          <div class="chips" role="group" aria-label="Vista del modelo 3D"><button type="button" data-view="iso" aria-pressed="true">Isométrica</button><button type="button" data-view="front" aria-pressed="false">Sección frontal</button><button type="button" data-view="side" aria-pressed="false">Lateral</button></div>
+          <div class="zoom" role="group" aria-label="Acercamiento"><button type="button" id="viewer-zoom-in" aria-label="Acercar">+</button><button type="button" id="viewer-zoom-out" aria-label="Alejar">−</button></div>
+          <label class="check" for="viewer-labels"><input id="viewer-labels" type="checkbox" checked>Cotas y etiquetas</label>
+          <label class="check" for="viewer-rotate"><input id="viewer-rotate" type="checkbox">Giro automático</label>
+          <span class="viewbar-help">Arrastra para girar el modelo</span>
+        </div>
+        <dl id="cable-data" class="cable-data" aria-label="Datos de la línea configurada"></dl>
+      </section>
+      <section aria-labelledby="headline-title"><div class="section-heading"><svg class="icon section-icon"><use href="#i-bars"/></svg><h2 id="headline-title">Resultados principales</h2><span id="headline-context" class="section-context"></span></div><div class="headline-grid" id="headline-cards"></div></section>
+      <div class="notices">
+        <div id="skin-diagnostics" class="skin-diagnostics" hidden></div>
+        <div id="model-warnings" class="model-warnings" role="status" aria-live="polite" hidden></div>
+      </div>
+      <section class="panel tabs-panel" aria-label="Resultados y análisis">
+        <div class="tabs" role="tablist" aria-label="Vistas de resultados">
+          <button id="summary-tab" role="tab" aria-controls="summary-view" aria-selected="true" tabindex="0"><svg class="icon"><use href="#i-gauge"/></svg>Resumen</button>
+          <button id="table-tab" role="tab" aria-controls="table-view" aria-selected="false" tabindex="-1"><svg class="icon"><use href="#i-list"/></svg>Detalles</button>
+          <button id="chart-tab" role="tab" aria-controls="chart-view" aria-selected="false" tabindex="-1"><svg class="icon"><use href="#i-chart"/></svg>Gráfica</button>
+          <button id="sweep-table-tab" role="tab" aria-controls="sweep-table-view" aria-selected="false" tabindex="-1"><svg class="icon"><use href="#i-grid"/></svg>Tabla</button>
+        </div>
+        <div id="summary-view" class="tab-view" role="tabpanel" aria-labelledby="summary-tab">
+          <div class="section-heading sub"><h3 id="primary-title">Parámetros primarios</h3><span class="section-context">Por unidad de longitud</span></div><div class="metric-grid primary" id="primary-cards"></div>
+          <div class="section-heading sub"><h3 id="secondary-title">Parámetros secundarios</h3><span class="section-context">Propiedades de propagación</span></div><div class="metric-grid secondary" id="secondary-cards"></div>
+        </div>
+        <div id="table-view" class="tab-view" role="tabpanel" aria-labelledby="table-tab" hidden><div class="table-scroll"><table><caption>Parámetros eléctricos de la línea a la frecuencia de operación</caption><thead><tr><th scope="col">Parámetro</th><th scope="col">Símbolo</th><th scope="col">Unidad</th><th scope="col">Resultado</th></tr></thead><tbody id="results-table"></tbody></table></div></div>
+        <div id="chart-view" class="tab-view" role="tabpanel" aria-labelledby="chart-tab" hidden>
+          <div class="chart-layout">
+            <div class="chart-column">
+              <div class="chart-controls"><div><label for="plot-magnitude">Magnitud</label><select id="plot-magnitude"></select></div><div><label for="plot-scale">Eje de frecuencia</label><select id="plot-scale"><option value="log" selected>Logarítmico</option><option value="linear">Lineal</option></select></div><button id="reset-zoom" class="compact-button" type="button" disabled>Restablecer zoom</button></div>
+              <p id="plot-status" class="form-status plot-status" role="status" aria-live="polite"></p>
+              <div id="chart-placeholder" class="chart-empty"><svg class="icon chart-symbol"><use href="#i-chart"/></svg><h3>Explora la respuesta en frecuencia</h3><p id="chart-message">Genera un análisis para visualizar una magnitud. El cálculo individual se muestra en sus tarjetas y tabla.</p></div>
+              <div id="plot-container" class="interactive-plot" role="img" aria-label="Gráfica interactiva de parámetros frente a frecuencia" hidden></div>
+              <p class="chart-help">Arrastra para ampliar y coloca el cursor para leer valores. Los huecos son puntos rechazados; los marcadores ámbar, puntos con avisos.</p>
+            </div>
+            <aside class="analysis-card" aria-labelledby="analysis-title">
+              <div class="analysis-heading"><svg class="icon section-icon"><use href="#i-bars"/></svg><h3 id="analysis-title">Análisis de frecuencia</h3></div>
+              <form id="sweep-form" class="sweep-form" novalidate>
+                <div class="sweep-fields">
+                  <div><label for="sweep-start">Frecuencia inicial</label><input id="sweep-start" type="number" min="0" step="any" value="1" required aria-describedby="sweep-start-error"><small class="error" id="sweep-start-error"></small></div>
+                  <div><label for="sweep-end">Frecuencia final</label><input id="sweep-end" type="number" min="0" step="any" value="1000" required aria-describedby="sweep-end-error"><small class="error" id="sweep-end-error"></small></div>
+                  <div><label for="sweep-unit">Unidad</label><select id="sweep-unit" aria-describedby="sweep-unit-error"><option>Hz</option><option>kHz</option><option selected>MHz</option><option>GHz</option></select><small class="error" id="sweep-unit-error"></small></div>
+                  <div><label for="sweep-points">Puntos (10–500)</label><input id="sweep-points" type="number" min="10" max="500" step="1" value="100" required aria-describedby="sweep-points-error"><small class="error" id="sweep-points-error"></small></div>
+                  <div class="wide"><label for="sweep-scale">Muestreo</label><select id="sweep-scale" aria-describedby="sweep-scale-error"><option value="log" selected>Logarítmico</option><option value="linear">Lineal</option></select><small class="error" id="sweep-scale-error"></small></div>
+                </div>
+                <button id="generate-analysis" class="calculate" type="submit"><svg class="icon"><use href="#i-chart"/></svg><span>Generar análisis</span><svg class="icon arrow"><use href="#i-arrow"/></svg></button>
+                <div class="export-actions"><button id="export-csv" class="compact-button" type="button" disabled><svg class="icon"><use href="#i-download"/></svg>Exportar CSV</button><button id="download-png" class="compact-button" type="button" disabled><svg class="icon"><use href="#i-download"/></svg>Descargar PNG</button></div>
+                <p id="sweep-status" class="form-status" role="status" aria-live="polite">Configura el intervalo y pulsa Generar análisis.</p>
+              </form>
+            </aside>
+          </div>
+          <div id="sweep-warnings" class="sweep-warnings" role="status" aria-live="polite" hidden></div>
+          <p class="analysis-validity">Resultados del modelo aproximado, sin garantía de validez física en toda la banda. Se mantienen εr, tanδ y σc constantes; no se modela dispersión.</p>
+        </div>
+        <div id="sweep-table-view" class="tab-view" role="tabpanel" aria-labelledby="sweep-table-tab" hidden><div class="table-scroll sweep-table-scroll"><table><caption id="sweep-table-caption">Genera un análisis para completar esta tabla.</caption><thead><tr><th id="sweep-frequency-heading" scope="col">Frecuencia [MHz]</th><th scope="col">R′ [Ω/m]</th><th scope="col">L′ [H/m]</th><th scope="col">C′ [F/m]</th><th scope="col">G′ [S/m]</th><th scope="col">Re(Z₀) [Ω]</th><th scope="col">Im(Z₀) [Ω]</th><th scope="col">α [Np/m]</th><th scope="col">α [dB/m]</th><th scope="col">β [rad/m]</th><th scope="col">vₚ [m/s]</th><th scope="col">λ [m]</th><th scope="col">Estado y avisos</th></tr></thead><tbody id="sweep-results-table"><tr><td colspan="13">Pendiente de análisis.</td></tr></tbody></table></div></div>
+      </section>
+      <div class="reference-grid">
+        <details id="about" class="panel reference">
+          <summary><svg class="icon section-icon"><use href="#i-info"/></svg><span id="model-title">Condiciones del modelo y validez</span><span class="subtle-badge">TEM · μr = 1</span></summary>
+          <div class="reference-body">
+            <p class="model-summary">R′ utiliza una aproximación de alta frecuencia por efecto pelicular. L′ omite la inductancia interna. Se supone un dieléctrico homogéneo y materiales no magnéticos. Los parámetros secundarios heredan estas limitaciones.</p>
+            <p>Los avisos δ/a ≥ 0.1 (o δ/w ≥ 0.1 en placas), D/(2a) &lt; 5 y w/d &lt; 10 son criterios orientativos; no garantizan validez ni un error acotado. No se conoce el espesor de las placas ni de la pared coaxial, por lo que no se verifica espesor ≫ δ. A baja frecuencia, R′ puede ser inadecuada; no se sustituye por una fórmula de corriente continua.</p>
+            <p>Sin dispersión, rugosidad, radiación ni pérdidas por conectores. «Calculado» indica éxito numérico, no validez física garantizada. Los avisos y errores se conservan en la tabla y en el CSV.</p>
+          </div>
+        </details>
+        <details class="panel reference">
+          <summary><svg class="icon section-icon"><use href="#i-book"/></svg><span>Ecuaciones y referencias</span></summary>
+          <div class="reference-body model-details">
+            <p>ε = ε₀εr, μ = μc = μ₀, ω = 2πf. Rs = √(πfμc/σc), δ = √(2/(ωμcσc)). Ambos conductores tienen la misma conductividad.</p>
+            <dl><dt>Coaxial</dt><dd>C′ = 2πε/ln(b/a); L′ = μ ln(b/a)/(2π); R′ ≈ Rs(1/a + 1/b)/(2π).</dd><dt>Bifilar</dt><dd>A = arcosh(D/(2a)); C′ = πε/A; L′ = μA/π; R′ ≈ Rs/(πa), omitiendo proximidad.</dd><dt>Placas paralelas</dt><dd>C′ ≈ εw/d; L′ ≈ μd/w; R′ ≈ 2Rs/w. Placas anchas, sin efectos de borde.</dd><dt>Pérdidas dieléctricas</dt><dd>G′ = ωC′ tanδ en las tres geometrías. Dimensiones convertidas a metros.</dd><dt>Parámetros secundarios</dt><dd>Z′ = R′ + jωL′ (Ω/m), Y′ = G′ + jωC′ (S/m). Z₀ = √(Z′/Y′) (Ω), γ = √(Z′Y′) = α + jβ (m⁻¹), con α ≥ 0 y β &gt; 0 para el modelo pasivo. vₚ = ω/β (m/s), λ = 2π/β (m), αdB = 8.686α (dB/m; factor redondeado).</dd></dl>
+            <p>Se usa la convención temporal e<sup>jωt</sup> y propagación e<sup>−γz</sup>. Las ecuaciones secundarias se evalúan sin aproximación de bajas pérdidas y conservando la parte imaginaria de Z₀. No corrigen las aproximaciones de R′, L′, C′ y G′.</p>
+            <p>Valores iniciales: cobre 5.8×10⁷, aluminio 3.5×10⁷, plata 6.3×10⁷ y oro 4.1×10⁷ S/m (~20 °C). Dieléctricos (εr, tanδ): aire (1.0006, 0), vacío (1, 0), PTFE (2.1, 0.0002), polietileno (2.25, 0.0003). Son valores editables de arranque, no una caracterización de un producto ni de toda la banda.</p>
+            <p>Constantes CODATA 2022: ε₀ = 8.8541878188×10⁻¹² F/m y μ₀ = 1.25663706127×10⁻⁶ H/m. <a href="README.md" download>Documentación y pruebas</a>.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </div>
+  <footer><span><strong>LINEALAB v1.0</strong> · <a id="download-project" href="./proyecto.zip" download="LINEALAB-v1.0.zip">Descargar proyecto completo</a> · <a href="validation/REPORT.md" download>Validación</a></span><span>HTML5 / CSS3 / JavaScript</span></footer>
+</main><script src="calculations.js"></script><script src="secondary.js"></script><script src="sweep.js"></script><script src="charts.js"></script><script id="plotly-script" defer src="vendor/plotly-basic-2.35.2.min.js"></script><script src="app.js"></script><script src="analysis.js"></script><script defer src="vendor/three-0.147.0.min.js"></script><script defer src="vendor/three-0.147.0-OrbitControls.js"></script><script defer src="vendor/three-0.147.0-RoomEnvironment.js"></script><script defer src="viewer3d.js"></script>
+</body></html>

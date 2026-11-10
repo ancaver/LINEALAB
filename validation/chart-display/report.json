@@ -1,0 +1,362 @@
+{
+  "harness": "Chromium real, recursos locales y documento in-memory, sin navegación HTTP/file://",
+  "offline": true,
+  "contexts": [
+    {
+      "width": 1440,
+      "series": [
+        {
+          "geometry": "bifilar",
+          "key": "L",
+          "range": [
+            0.8711240343182307,
+            0.9628213010885709
+          ],
+          "y": 0.9169726677034008,
+          "name": "Inductancia L′ [µH/m]",
+          "raw": "9.169726677034007e-7",
+          "note": "Constante: 0.91697267 µH/m",
+          "ticks": [
+            "0.88",
+            "0.9",
+            "0.92",
+            "0.94",
+            "0.96"
+          ]
+        },
+        {
+          "geometry": "bifilar",
+          "key": "C",
+          "range": [
+            11.534168912941393,
+            12.74829195640891
+          ],
+          "y": 12.141230434675151,
+          "name": "Capacitancia C′ [pF/m]",
+          "raw": "1.2141230434675152e-11",
+          "note": "Constante: 12.14123 pF/m",
+          "ticks": [
+            "11.6",
+            "11.8",
+            "12",
+            "12.2",
+            "12.4",
+            "12.6"
+          ]
+        },
+        {
+          "geometry": "bifilar",
+          "key": "G",
+          "range": [
+            -0.5,
+            0.5
+          ],
+          "y": 0,
+          "name": "Conductancia G′ [S/m]",
+          "raw": "0",
+          "note": "Valor exactamente cero: 0 S/m",
+          "ticks": [
+            "0"
+          ]
+        },
+        {
+          "geometry": "coaxial",
+          "key": "L",
+          "range": [
+            0.2633959285780023,
+            0.29112181579673946
+          ],
+          "y": 0.2772588721873709,
+          "name": "Inductancia L′ [µH/m]",
+          "raw": "2.7725887218737085e-7",
+          "note": "Constante: 0.27725887 µH/m",
+          "ticks": [
+            "0.265",
+            "0.27",
+            "0.275",
+            "0.28",
+            "0.285",
+            "0.29"
+          ]
+        },
+        {
+          "geometry": "coaxial",
+          "key": "C",
+          "range": [
+            38.146723870008096,
+            42.16216848790368
+          ],
+          "y": 40.15444617895589,
+          "name": "Capacitancia C′ [pF/m]",
+          "raw": "4.0154446178955885e-11",
+          "note": "Constante: 40.154446 pF/m",
+          "ticks": [
+            "39",
+            "40",
+            "41",
+            "42"
+          ]
+        },
+        {
+          "geometry": "coaxial",
+          "key": "G",
+          "range": [
+            -0.5,
+            0.5
+          ],
+          "y": 0,
+          "name": "Conductancia G′ [S/m]",
+          "raw": "0",
+          "note": "Valor exactamente cero: 0 S/m",
+          "ticks": [
+            "0"
+          ]
+        },
+        {
+          "geometry": "placas",
+          "key": "L",
+          "range": [
+            0.059690260410325005,
+            0.065973445716675
+          ],
+          "y": 0.0628318530635,
+          "name": "Inductancia L′ [µH/m]",
+          "raw": "6.28318530635e-8",
+          "note": "Constante: 0.062831853 µH/m",
+          "ticks": [
+            "0.06",
+            "0.061",
+            "0.062",
+            "0.063",
+            "0.064",
+            "0.065"
+          ]
+        },
+        {
+          "geometry": "placas",
+          "key": "C",
+          "range": [
+            168.3305062983343,
+            186.0495069613169
+          ],
+          "y": 177.1900066298256,
+          "name": "Capacitancia C′ [pF/m]",
+          "raw": "1.771900066298256e-10",
+          "note": "Constante: 177.19001 pF/m",
+          "ticks": [
+            "170",
+            "175",
+            "180",
+            "185"
+          ]
+        },
+        {
+          "geometry": "placas",
+          "key": "G",
+          "range": [
+            -0.5,
+            0.5
+          ],
+          "y": 0,
+          "name": "Conductancia G′ [S/m]",
+          "raw": "0",
+          "note": "Valor exactamente cero: 0 S/m",
+          "ticks": [
+            "0"
+          ]
+        }
+      ],
+      "resetAndAutoscale": true,
+      "darkTheme": true,
+      "example": {
+        "y": 0.269415,
+        "range": [
+          0.25594425000000004,
+          0.28288575
+        ],
+        "note": "Constante: 0.269415 µH/m",
+        "hover": "Frecuencia: 32.745491628777245 MHzInductancia L′: 0.269415 µH/mValor SI: 2.69415e-7 H/mModelo aproximado · 1 aviso(s) del modelo"
+      },
+      "pageErrors": []
+    },
+    {
+      "width": 390,
+      "series": [
+        {
+          "geometry": "bifilar",
+          "key": "L",
+          "range": [
+            0.8711240343182307,
+            0.9628213010885709
+          ],
+          "y": 0.9169726677034008,
+          "name": "Inductancia L′ [µH/m]",
+          "raw": "9.169726677034007e-7",
+          "note": "Constante: 0.91697267 µH/m",
+          "ticks": [
+            "0.88",
+            "0.9",
+            "0.92",
+            "0.94",
+            "0.96"
+          ]
+        },
+        {
+          "geometry": "bifilar",
+          "key": "C",
+          "range": [
+            11.534168912941393,
+            12.74829195640891
+          ],
+          "y": 12.141230434675151,
+          "name": "Capacitancia C′ [pF/m]",
+          "raw": "1.2141230434675152e-11",
+          "note": "Constante: 12.14123 pF/m",
+          "ticks": [
+            "11.6",
+            "11.8",
+            "12",
+            "12.2",
+            "12.4",
+            "12.6"
+          ]
+        },
+        {
+          "geometry": "bifilar",
+          "key": "G",
+          "range": [
+            -0.5,
+            0.5
+          ],
+          "y": 0,
+          "name": "Conductancia G′ [S/m]",
+          "raw": "0",
+          "note": "Valor exactamente cero: 0 S/m",
+          "ticks": [
+            "0"
+          ]
+        },
+        {
+          "geometry": "coaxial",
+          "key": "L",
+          "range": [
+            0.2633959285780023,
+            0.29112181579673946
+          ],
+          "y": 0.2772588721873709,
+          "name": "Inductancia L′ [µH/m]",
+          "raw": "2.7725887218737085e-7",
+          "note": "Constante: 0.27725887 µH/m",
+          "ticks": [
+            "0.265",
+            "0.27",
+            "0.275",
+            "0.28",
+            "0.285",
+            "0.29"
+          ]
+        },
+        {
+          "geometry": "coaxial",
+          "key": "C",
+          "range": [
+            38.146723870008096,
+            42.16216848790368
+          ],
+          "y": 40.15444617895589,
+          "name": "Capacitancia C′ [pF/m]",
+          "raw": "4.0154446178955885e-11",
+          "note": "Constante: 40.154446 pF/m",
+          "ticks": [
+            "39",
+            "40",
+            "41",
+            "42"
+          ]
+        },
+        {
+          "geometry": "coaxial",
+          "key": "G",
+          "range": [
+            -0.5,
+            0.5
+          ],
+          "y": 0,
+          "name": "Conductancia G′ [S/m]",
+          "raw": "0",
+          "note": "Valor exactamente cero: 0 S/m",
+          "ticks": [
+            "0"
+          ]
+        },
+        {
+          "geometry": "placas",
+          "key": "L",
+          "range": [
+            0.059690260410325005,
+            0.065973445716675
+          ],
+          "y": 0.0628318530635,
+          "name": "Inductancia L′ [µH/m]",
+          "raw": "6.28318530635e-8",
+          "note": "Constante: 0.062831853 µH/m",
+          "ticks": [
+            "0.06",
+            "0.061",
+            "0.062",
+            "0.063",
+            "0.064",
+            "0.065"
+          ]
+        },
+        {
+          "geometry": "placas",
+          "key": "C",
+          "range": [
+            168.3305062983343,
+            186.0495069613169
+          ],
+          "y": 177.1900066298256,
+          "name": "Capacitancia C′ [pF/m]",
+          "raw": "1.771900066298256e-10",
+          "note": "Constante: 177.19001 pF/m",
+          "ticks": [
+            "170",
+            "175",
+            "180",
+            "185"
+          ]
+        },
+        {
+          "geometry": "placas",
+          "key": "G",
+          "range": [
+            -0.5,
+            0.5
+          ],
+          "y": 0,
+          "name": "Conductancia G′ [S/m]",
+          "raw": "0",
+          "note": "Valor exactamente cero: 0 S/m",
+          "ticks": [
+            "0"
+          ]
+        }
+      ],
+      "resetAndAutoscale": true,
+      "darkTheme": true,
+      "example": {
+        "y": 0.269415,
+        "range": [
+          0.25594425000000004,
+          0.28288575
+        ],
+        "note": "Constante: 0.269415 µH/m",
+        "hover": "Frecuencia: 32.745491628777245 MHzInductancia L′: 0.269415 µH/mValor SI: 2.69415e-7 H/mModelo aproximado · 1 aviso(s) del modelo"
+      },
+      "pageErrors": []
+    }
+  ],
+  "browser": "153.0.8010.12",
+  "status": "passed"
+}

@@ -1,0 +1,10 @@
+{
+  "csvRowsIncludingHeader": 101,
+  "columns": 27,
+  "numericCellsCompared": 2200,
+  "maxRelativeError": 4.884981308350689e-15,
+  "relativeTolerance": 2e-12,
+  "method": "CSV abierto y convertido por LibreOffice Calc sin interfaz; XLSX leído por openpyxl. NO es una prueba de Microsoft Excel.",
+  "microsoftExcelStatus": "Pendiente: no hay sesión Excel conectada ni aplicación Microsoft Excel disponible.",
+  "applicationVersion": "LibreOfficeDev 26.8.0.0.alpha0"
+}

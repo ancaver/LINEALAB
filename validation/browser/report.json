@@ -1,0 +1,171 @@
+{
+  "generatedAtUTC": "2026-11-10T16:53:26.023Z",
+  "harness": "Chromium real con documento in-memory, recursos locales íntegros; sin navegación file:// ni HTTP",
+  "offline": true,
+  "contexts": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "mobileEmulated": false,
+      "matrix": [
+        {
+          "geometry": "bifilar",
+          "points": 10,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "bifilar",
+          "points": 100,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "bifilar",
+          "points": 500,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "coaxial",
+          "points": 10,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "coaxial",
+          "points": 100,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "coaxial",
+          "points": 500,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "placas",
+          "points": 10,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "placas",
+          "points": 100,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "placas",
+          "points": 500,
+          "magnitudesRendered": 11
+        }
+      ],
+      "png": {
+        "file": "desktop-plot.png",
+        "bytes": 135467,
+        "width": 2200,
+        "height": 1200
+      },
+      "csv": {
+        "file": "desktop-coaxial.csv",
+        "rows": 100,
+        "bytes": 63129
+      },
+      "zoom": "Arrastre real y autorange=false verificados",
+      "resetZoom": true,
+      "hover": true,
+      "layout": {
+        "page": 1440,
+        "viewport": 1440,
+        "table": 1602,
+        "container": 980
+      },
+      "validationAndReset": true,
+      "pageErrors": [],
+      "httpRequests": []
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mobileEmulated": true,
+      "matrix": [
+        {
+          "geometry": "bifilar",
+          "points": 10,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "bifilar",
+          "points": 100,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "bifilar",
+          "points": 500,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "coaxial",
+          "points": 10,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "coaxial",
+          "points": 100,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "coaxial",
+          "points": 500,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "placas",
+          "points": 10,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "placas",
+          "points": 100,
+          "magnitudesRendered": 11
+        },
+        {
+          "geometry": "placas",
+          "points": 500,
+          "magnitudesRendered": 11
+        }
+      ],
+      "png": {
+        "file": "mobile-plot.png",
+        "bytes": 135467,
+        "width": 2200,
+        "height": 1200
+      },
+      "csv": {
+        "file": "mobile-coaxial.csv",
+        "rows": 100,
+        "bytes": 63129
+      },
+      "zoom": "Arrastre real y autorange=false verificados",
+      "resetZoom": true,
+      "hover": true,
+      "layout": {
+        "page": 390,
+        "viewport": 390,
+        "table": 1602,
+        "container": 338
+      },
+      "validationAndReset": true,
+      "pageErrors": [],
+      "httpRequests": []
+    }
+  ],
+  "pending": [
+    "Navegación real al sitio publicado o por file:// en este entorno",
+    "Dispositivo móvil físico y navegadores distintos de Chromium",
+    "Apertura real en Microsoft Excel"
+  ],
+  "browser": "153.0.8010.12",
+  "playwright": "1.63.0",
+  "status": "passed"
+}

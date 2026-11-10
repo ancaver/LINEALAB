@@ -1,0 +1,75 @@
+{
+  "generatedAtUTC": "2026-11-10T16:52:44.446Z",
+  "harness": "Chromium real con documento in-memory y WebGL por software (SwiftShader); sin navegación file:// ni HTTP",
+  "offline": true,
+  "contexts": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "compact": {
+        "stage": 200,
+        "hero": 339,
+        "kpiTop": 491
+      },
+      "geometries": {
+        "bifilar": {
+          "callouts": 3,
+          "canvasPngBytes": 282592,
+          "note": "Dimensiones eléctricas a escala. Cubierta, espesores y extensión del dieléctrico son ilustrativos."
+        },
+        "coaxial": {
+          "callouts": 4,
+          "canvasPngBytes": 273301,
+          "note": "Dimensiones eléctricas a escala. Cubierta, espesores y extensión del dieléctrico son ilustrativos."
+        },
+        "placas": {
+          "callouts": 3,
+          "canvasPngBytes": 229187,
+          "note": "Dimensiones eléctricas a escala. Cubierta, espesores y extensión del dieléctrico son ilustrativos."
+        }
+      },
+      "pageErrors": [],
+      "httpRequests": []
+    },
+    {
+      "name": "mobile",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "compact": {
+        "stage": 200,
+        "hero": 843,
+        "kpiTop": 2296
+      },
+      "geometries": {
+        "bifilar": {
+          "callouts": 3,
+          "canvasPngBytes": 124569,
+          "note": "Dimensiones eléctricas a escala. Cubierta, espesores y extensión del dieléctrico son ilustrativos."
+        },
+        "coaxial": {
+          "callouts": 4,
+          "canvasPngBytes": 115558,
+          "note": "Dimensiones eléctricas a escala. Cubierta, espesores y extensión del dieléctrico son ilustrativos."
+        },
+        "placas": {
+          "callouts": 3,
+          "canvasPngBytes": 97634,
+          "note": "Dimensiones eléctricas a escala. Cubierta, espesores y extensión del dieléctrico son ilustrativos."
+        }
+      },
+      "pageErrors": [],
+      "httpRequests": []
+    }
+  ],
+  "pending": [
+    "GPU física, móvil físico y navegadores distintos de Chromium"
+  ],
+  "browser": "153.0.8010.12",
+  "fallbackWithoutWebGL": true,
+  "status": "passed"
+}
