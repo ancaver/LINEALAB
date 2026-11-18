@@ -1,0 +1,910 @@
+TAP version 13
+# Subtest: Análisis UI: valores iniciales, cálculo independiente y tabla de 100 filas
+ok 1 - Análisis UI: valores iniciales, cálculo independiente y tabla de 100 filas
+  ---
+  duration_ms: 31.03053
+  type: 'test'
+  ...
+# Subtest: Análisis UI: validación local y de geometría, sin resultados inventados
+ok 2 - Análisis UI: validación local y de geometría, sin resultados inventados
+  ---
+  duration_ms: 6.837351
+  type: 'test'
+  ...
+# Subtest: Análisis UI: editar intervalo no altera el resultado individual; editar geometría invalida ambos
+ok 3 - Análisis UI: editar intervalo no altera el resultado individual; editar geometría invalida ambos
+  ---
+  duration_ms: 15.802472
+  type: 'test'
+  ...
+# Subtest: Análisis UI: magnitud y eje redibujan sin modificar las muestras
+ok 4 - Análisis UI: magnitud y eje redibujan sin modificar las muestras
+  ---
+  duration_ms: 16.812711
+  type: 'test'
+  ...
+# Subtest: Análisis UI: CSV se descarga como Blob sin servidor, con precisión completa
+ok 5 - Análisis UI: CSV se descarga como Blob sin servidor, con precisión completa
+  ---
+  duration_ms: 18.468922
+  type: 'test'
+  ...
+# Subtest: Análisis UI: CDN ausente o fallido mantiene tabla y CSV; carga tardía dibuja
+ok 6 - Análisis UI: CDN ausente o fallido mantiene tabla y CSV; carga tardía dibuja
+  ---
+  duration_ms: 7.351905
+  type: 'test'
+  ...
+# Subtest: Análisis UI: puntos rechazados, avisos y campos vacíos
+ok 7 - Análisis UI: puntos rechazados, avisos y campos vacíos
+  ---
+  duration_ms: 6.194354
+  type: 'test'
+  ...
+# Subtest: Análisis UI: pestaña oculta y restablecimiento de ambos formularios
+ok 8 - Análisis UI: pestaña oculta y restablecimiento de ambos formularios
+  ---
+  duration_ms: 8.096405
+  type: 'test'
+  ...
+# Subtest: Análisis UI: una respuesta Plotly anterior no reactiva una gráfica invalidada
+ok 9 - Análisis UI: una respuesta Plotly anterior no reactiva una gráfica invalidada
+  ---
+  duration_ms: 6.850611
+  type: 'test'
+  ...
+# Subtest: Coaxial: referencia numérica del proyecto y conversión mm → m
+ok 10 - Coaxial: referencia numérica del proyecto y conversión mm → m
+  ---
+  duration_ms: 6.1182
+  type: 'test'
+  ...
+# Subtest: Bifilar: referencia independiente en vacío
+ok 11 - Bifilar: referencia independiente en vacío
+  ---
+  duration_ms: 0.231789
+  type: 'test'
+  ...
+# Subtest: Placas anchas: referencia independiente en vacío
+ok 12 - Placas anchas: referencia independiente en vacío
+  ---
+  duration_ms: 0.360371
+  type: 'test'
+  ...
+# Subtest: coaxial: L′ y C′ independientes de frecuencia; escalas de R′ y G′
+ok 13 - coaxial: L′ y C′ independientes de frecuencia; escalas de R′ y G′
+  ---
+  duration_ms: 0.364679
+  type: 'test'
+  ...
+# Subtest: coaxial: longitud no multiplica los parámetros por metro
+ok 14 - coaxial: longitud no multiplica los parámetros por metro
+  ---
+  duration_ms: 0.28585
+  type: 'test'
+  ...
+# Subtest: coaxial: dieléctrico sin pérdidas, εr y conductividad editables
+ok 15 - coaxial: dieléctrico sin pérdidas, εr y conductividad editables
+  ---
+  duration_ms: 0.277156
+  type: 'test'
+  ...
+# Subtest: bifilar: L′ y C′ independientes de frecuencia; escalas de R′ y G′
+ok 16 - bifilar: L′ y C′ independientes de frecuencia; escalas de R′ y G′
+  ---
+  duration_ms: 0.346391
+  type: 'test'
+  ...
+# Subtest: bifilar: longitud no multiplica los parámetros por metro
+ok 17 - bifilar: longitud no multiplica los parámetros por metro
+  ---
+  duration_ms: 0.190387
+  type: 'test'
+  ...
+# Subtest: bifilar: dieléctrico sin pérdidas, εr y conductividad editables
+ok 18 - bifilar: dieléctrico sin pérdidas, εr y conductividad editables
+  ---
+  duration_ms: 0.202985
+  type: 'test'
+  ...
+# Subtest: placas: L′ y C′ independientes de frecuencia; escalas de R′ y G′
+ok 19 - placas: L′ y C′ independientes de frecuencia; escalas de R′ y G′
+  ---
+  duration_ms: 0.371058
+  type: 'test'
+  ...
+# Subtest: placas: longitud no multiplica los parámetros por metro
+ok 20 - placas: longitud no multiplica los parámetros por metro
+  ---
+  duration_ms: 0.220832
+  type: 'test'
+  ...
+# Subtest: placas: dieléctrico sin pérdidas, εr y conductividad editables
+ok 21 - placas: dieléctrico sin pérdidas, εr y conductividad editables
+  ---
+  duration_ms: 0.17277
+  type: 'test'
+  ...
+# Subtest: Hz/kHz/MHz/GHz representan la misma frecuencia
+ok 22 - Hz/kHz/MHz/GHz representan la misma frecuencia
+  ---
+  duration_ms: 1.190831
+  type: 'test'
+  ...
+# Subtest: Baja frecuencia: aviso de penetración, sin sustituir R′ por una fórmula DC
+ok 23 - Baja frecuencia: aviso de penetración, sin sustituir R′ por una fórmula DC
+  ---
+  duration_ms: 0.267712
+  type: 'test'
+  ...
+# Subtest: Avisos de proximidad, efectos de borde y espesores desconocidos
+ok 24 - Avisos de proximidad, efectos de borde y espesores desconocidos
+  ---
+  duration_ms: 0.29966
+  type: 'test'
+  ...
+# Subtest: Rechaza valores nulos, negativos, NaN, infinitos y texto; tanδ permite cero
+ok 25 - Rechaza valores nulos, negativos, NaN, infinitos y texto; tanδ permite cero
+  ---
+  duration_ms: 2.769925
+  type: 'test'
+  ...
+# Subtest: Rechaza geometrías en contacto o superpuestas y selecciones inválidas
+ok 26 - Rechaza geometrías en contacto o superpuestas y selecciones inválidas
+  ---
+  duration_ms: 0.389485
+  type: 'test'
+  ...
+# Subtest: Desbordamiento y subdesbordamiento: nunca devuelve NaN, infinito ni ceros espurios
+ok 27 - Desbordamiento y subdesbordamiento: nunca devuelve NaN, infinito ni ceros espurios
+  ---
+  duration_ms: 0.198779
+  type: 'test'
+  ...
+# Subtest: Los valores iniciales contienen todos los materiales y son inmutables
+ok 28 - Los valores iniciales contienen todos los materiales y son inmutables
+  ---
+  duration_ms: 0.11997
+  type: 'test'
+  ...
+# Subtest: L constante 2.69415e-7 H/m: µH/m y rango relativo, sin ±1
+ok 29 - L constante 2.69415e-7 H/m: µH/m y rango relativo, sin ±1
+  ---
+  duration_ms: 6.141885
+  type: 'test'
+  ...
+# Subtest: Capacitancia constante: prefijos pF/m y nF/m coherentes con los datos
+ok 30 - Capacitancia constante: prefijos pF/m y nF/m coherentes con los datos
+  ---
+  duration_ms: 0.694695
+  type: 'test'
+  ...
+# Subtest: Series variables diminutas mantienen variación y un margen proporcionado
+ok 31 - Series variables diminutas mantienen variación y un margen proporcionado
+  ---
+  duration_ms: 0.825201
+  type: 'test'
+  ...
+# Subtest: Cero auténtico: marca única 0 y anotación explícita, sin etiquetas ±1
+ok 32 - Cero auténtico: marca única 0 y anotación explícita, sin etiquetas ±1
+  ---
+  duration_ms: 0.349725
+  type: 'test'
+  ...
+# Subtest: Un valor muy pequeño no se clasifica como cero y los huecos siguen siendo huecos
+ok 33 - Un valor muy pequeño no se clasifica como cero y los huecos siguen siendo huecos
+  ---
+  duration_ms: 0.275664
+  type: 'test'
+  ...
+# Subtest: Serie casi constante: conserva la variación sin inventar constancia
+ok 34 - Serie casi constante: conserva la variación sin inventar constancia
+  ---
+  duration_ms: 0.277126
+  type: 'test'
+  ...
+# Subtest: Valores constantes negativos y de ambos signos conservan el signo y su escala
+ok 35 - Valores constantes negativos y de ambos signos conservan el signo y su escala
+  ---
+  duration_ms: 0.510919
+  type: 'test'
+  ...
+# Subtest: Hover: conserva la cadena SI round-trip completa, además del valor de la unidad visual
+ok 36 - Hover: conserva la cadena SI round-trip completa, además del valor de la unidad visual
+  ---
+  duration_ms: 0.264487
+  type: 'test'
+  ...
+# Subtest: Sin muestras válidas: no anota cero ni inventa datos
+ok 37 - Sin muestras válidas: no anota cero ni inventa datos
+  ---
+  duration_ms: 0.378178
+  type: 'test'
+  ...
+# Subtest: Escalas extremas finitas no generan límites infinitos
+ok 38 - Escalas extremas finitas no generan límites infinitos
+  ---
+  duration_ms: 0.428554
+  type: 'test'
+  ...
+# Subtest: Vista y cambio de tema no mutan resultados, frecuencias, tarjetas ni CSV
+ok 39 - Vista y cambio de tema no mutan resultados, frecuencias, tarjetas ni CSV
+  ---
+  duration_ms: 5.04116
+  type: 'test'
+  ...
+# Subtest: Complejos: multiplicación y división con ambas componentes
+ok 40 - Complejos: multiplicación y división con ambas componentes
+  ---
+  duration_ms: 1.57573
+  type: 'test'
+  ...
+# Subtest: Raíz principal: cuatro cuadrantes, cero y corte del eje negativo
+ok 41 - Raíz principal: cuatro cuadrantes, cero y corte del eje negativo
+  ---
+  duration_ms: 0.517478
+  type: 'test'
+  ...
+# Subtest: Magnitud escalada y argumento en radianes con el cuadrante correcto
+ok 42 - Magnitud escalada y argumento en radianes con el cuadrante correcto
+  ---
+  duration_ms: 0.277667
+  type: 'test'
+  ...
+# Subtest: División: no eleva números grandes o pequeños al cuadrado en Number
+ok 43 - División: no eleva números grandes o pequeños al cuadrado en Number
+  ---
+  duration_ms: 4.397643
+  type: 'test'
+  ...
+# Subtest: Multiplicación: escalas opuestas y cancelación sin Infinity − Infinity
+ok 44 - Multiplicación: escalas opuestas y cancelación sin Infinity − Infinity
+  ---
+  duration_ms: 0.268514
+  type: 'test'
+  ...
+# Subtest: Raíz estable aun cuando |z| excede Number.MAX_VALUE
+ok 45 - Raíz estable aun cuando |z| excede Number.MAX_VALUE
+  ---
+  duration_ms: 0.443637
+  type: 'test'
+  ...
+# Subtest: Fallos numéricos explícitos: división por cero, desbordamiento y entradas inválidas
+ok 46 - Fallos numéricos explícitos: división por cero, desbordamiento y entradas inválidas
+  ---
+  duration_ms: 0.750438
+  type: 'test'
+  ...
+# Subtest: Límites finitos: conserva Number.MAX_VALUE y subnormales representables
+ok 47 - Límites finitos: conserva Number.MAX_VALUE y subnormales representables
+  ---
+  duration_ms: 0.216806
+  type: 'test'
+  ...
+# Subtest: Referencia Decimal 70 dígitos: coaxial, 1000000 Hz
+ok 48 - Referencia Decimal 70 dígitos: coaxial, 1000000 Hz
+  ---
+  duration_ms: 2.632819
+  type: 'test'
+  ...
+# Subtest: Referencia Decimal 70 dígitos: coaxial, 100000000 Hz
+ok 49 - Referencia Decimal 70 dígitos: coaxial, 100000000 Hz
+  ---
+  duration_ms: 0.349445
+  type: 'test'
+  ...
+# Subtest: Referencia Decimal 70 dígitos: coaxial, 1000000000 Hz
+ok 50 - Referencia Decimal 70 dígitos: coaxial, 1000000000 Hz
+  ---
+  duration_ms: 0.2793
+  type: 'test'
+  ...
+# Subtest: Referencia Decimal 70 dígitos: bifilar, 1000000 Hz
+ok 51 - Referencia Decimal 70 dígitos: bifilar, 1000000 Hz
+  ---
+  duration_ms: 0.387362
+  type: 'test'
+  ...
+# Subtest: Referencia Decimal 70 dígitos: bifilar, 100000000 Hz
+ok 52 - Referencia Decimal 70 dígitos: bifilar, 100000000 Hz
+  ---
+  duration_ms: 0.31937
+  type: 'test'
+  ...
+# Subtest: Referencia Decimal 70 dígitos: bifilar, 1000000000 Hz
+ok 53 - Referencia Decimal 70 dígitos: bifilar, 1000000000 Hz
+  ---
+  duration_ms: 0.453171
+  type: 'test'
+  ...
+# Subtest: Referencia Decimal 70 dígitos: placas, 1000000 Hz
+ok 54 - Referencia Decimal 70 dígitos: placas, 1000000 Hz
+  ---
+  duration_ms: 0.322785
+  type: 'test'
+  ...
+# Subtest: Referencia Decimal 70 dígitos: placas, 100000000 Hz
+ok 55 - Referencia Decimal 70 dígitos: placas, 100000000 Hz
+  ---
+  duration_ms: 1.067676
+  type: 'test'
+  ...
+# Subtest: Referencia Decimal 70 dígitos: placas, 1000000000 Hz
+ok 56 - Referencia Decimal 70 dígitos: placas, 1000000000 Hz
+  ---
+  duration_ms: 0.300021
+  type: 'test'
+  ...
+# Subtest: coaxial: tendencias 1 MHz → 100 MHz → 1 GHz
+ok 57 - coaxial: tendencias 1 MHz → 100 MHz → 1 GHz
+  ---
+  duration_ms: 0.689116
+  type: 'test'
+  ...
+# Subtest: coaxial: barrido completo de 10 puntos y once magnitudes
+ok 58 - coaxial: barrido completo de 10 puntos y once magnitudes
+  ---
+  duration_ms: 1.354207
+  type: 'test'
+  ...
+# Subtest: coaxial: barrido completo de 100 puntos y once magnitudes
+ok 59 - coaxial: barrido completo de 100 puntos y once magnitudes
+  ---
+  duration_ms: 4.627127
+  type: 'test'
+  ...
+# Subtest: coaxial: barrido completo de 500 puntos y once magnitudes
+ok 60 - coaxial: barrido completo de 500 puntos y once magnitudes
+  ---
+  duration_ms: 14.529658
+  type: 'test'
+  ...
+# Subtest: bifilar: tendencias 1 MHz → 100 MHz → 1 GHz
+ok 61 - bifilar: tendencias 1 MHz → 100 MHz → 1 GHz
+  ---
+  duration_ms: 0.275093
+  type: 'test'
+  ...
+# Subtest: bifilar: barrido completo de 10 puntos y once magnitudes
+ok 62 - bifilar: barrido completo de 10 puntos y once magnitudes
+  ---
+  duration_ms: 0.389947
+  type: 'test'
+  ...
+# Subtest: bifilar: barrido completo de 100 puntos y once magnitudes
+ok 63 - bifilar: barrido completo de 100 puntos y once magnitudes
+  ---
+  duration_ms: 1.461057
+  type: 'test'
+  ...
+# Subtest: bifilar: barrido completo de 500 puntos y once magnitudes
+ok 64 - bifilar: barrido completo de 500 puntos y once magnitudes
+  ---
+  duration_ms: 5.103173
+  type: 'test'
+  ...
+# Subtest: placas: tendencias 1 MHz → 100 MHz → 1 GHz
+ok 65 - placas: tendencias 1 MHz → 100 MHz → 1 GHz
+  ---
+  duration_ms: 0.283777
+  type: 'test'
+  ...
+# Subtest: placas: barrido completo de 10 puntos y once magnitudes
+ok 66 - placas: barrido completo de 10 puntos y once magnitudes
+  ---
+  duration_ms: 0.541254
+  type: 'test'
+  ...
+# Subtest: placas: barrido completo de 100 puntos y once magnitudes
+ok 67 - placas: barrido completo de 100 puntos y once magnitudes
+  ---
+  duration_ms: 4.783523
+  type: 'test'
+  ...
+# Subtest: placas: barrido completo de 500 puntos y once magnitudes
+ok 68 - placas: barrido completo de 500 puntos y once magnitudes
+  ---
+  duration_ms: 12.163881
+  type: 'test'
+  ...
+# Subtest: UI: calcula las tres geometrías y actualiza los diez parámetros
+ok 69 - UI: calcula las tres geometrías y actualiza los diez parámetros
+  ---
+  duration_ms: 10.658027
+  type: 'test'
+  ...
+# Subtest: UI: validación, foco y eliminación de resultados anteriores
+ok 70 - UI: validación, foco y eliminación de resultados anteriores
+  ---
+  duration_ms: 3.984
+  type: 'test'
+  ...
+# Subtest: UI: cambios de material, valores manuales y resultados sincronizados
+ok 71 - UI: cambios de material, valores manuales y resultados sincronizados
+  ---
+  duration_ms: 3.587384
+  type: 'test'
+  ...
+# Subtest: UI: cero dieléctrico, advertencias físicas, pestañas y restablecimiento
+ok 72 - UI: cero dieléctrico, advertencias físicas, pestañas y restablecimiento
+  ---
+  duration_ms: 3.4775
+  type: 'test'
+  ...
+# Subtest: Motor disponible como script clásico, sin CommonJS ni DOM
+ok 73 - Motor disponible como script clásico, sin CommonJS ni DOM
+  ---
+  duration_ms: 1.116409
+  type: 'test'
+  ...
+# Subtest: UI: representación compleja y auxiliares coaxiales coinciden en tarjetas y tabla
+ok 74 - UI: representación compleja y auxiliares coaxiales coinciden en tarjetas y tabla
+  ---
+  duration_ms: 3.007693
+  type: 'test'
+  ...
+# Subtest: UI: toda entrada numérica o selección invalida los diez resultados
+ok 75 - UI: toda entrada numérica o selección invalida los diez resultados
+  ---
+  duration_ms: 5.473912
+  type: 'test'
+  ...
+# Subtest: Gráfica geométrica: once magnitudes, x en mm, y con la presentación existente
+ok 76 - Gráfica geométrica: once magnitudes, x en mm, y con la presentación existente
+  ---
+  duration_ms: 11.080001
+  type: 'test'
+  ...
+# Subtest: Cursor geométrico: dimensión variable/vinculada, frecuencia fija, valor SI y avisos
+ok 77 - Cursor geométrico: dimensión variable/vinculada, frecuencia fija, valor SI y avisos
+  ---
+  duration_ms: 0.751239
+  type: 'test'
+  ...
+# Subtest: Gráfica geométrica: constante pequeña, cero exacto y prefijos sólo visuales
+ok 78 - Gráfica geométrica: constante pequeña, cero exacto y prefijos sólo visuales
+  ---
+  duration_ms: 0.811911
+  type: 'test'
+  ...
+# Subtest: Gráfica geométrica: rechazos como huecos; intervalo sin puntos válidos
+ok 79 - Gráfica geométrica: rechazos como huecos; intervalo sin puntos válidos
+  ---
+  duration_ms: 0.698971
+  type: 'test'
+  ...
+# Subtest: Gráfica geométrica: negativos, tema oscuro y descarga con nombre geométrico
+ok 80 - Gráfica geométrica: negativos, tema oscuro y descarga con nombre geométrico
+  ---
+  duration_ms: 0.543897
+  type: 'test'
+  ...
+# Subtest: Interfaz geométrica: modos disponibles y cuatro pestañas originales
+ok 81 - Interfaz geométrica: modos disponibles y cuatro pestañas originales
+  ---
+  duration_ms: 13.358349
+  type: 'test'
+  ...
+# Subtest: Interfaz geométrica: ejemplo, once filas y referencias visibles sin alterar configuración
+ok 82 - Interfaz geométrica: ejemplo, once filas y referencias visibles sin alterar configuración
+  ---
+  duration_ms: 8.463231
+  type: 'test'
+  ...
+# Subtest: Interfaz geométrica: frecuencia y geometría conservan sus resultados y CSV independientes
+ok 83 - Interfaz geométrica: frecuencia y geometría conservan sus resultados y CSV independientes
+  ---
+  duration_ms: 15.610564
+  type: 'test'
+  ...
+# Subtest: Interfaz geométrica: editar frecuencia no borra el análisis geométrico y viceversa
+ok 84 - Interfaz geométrica: editar frecuencia no borra el análisis geométrico y viceversa
+  ---
+  duration_ms: 6.842115
+  type: 'test'
+  ...
+# Subtest: Interfaz geométrica: siete variantes y restricciones de relación
+ok 85 - Interfaz geométrica: siete variantes y restricciones de relación
+  ---
+  duration_ms: 33.328536
+  type: 'test'
+  ...
+# Subtest: Interfaz geométrica: errores globales y puntos rechazados con huecos
+ok 86 - Interfaz geométrica: errores globales y puntos rechazados con huecos
+  ---
+  duration_ms: 5.030061
+  type: 'test'
+  ...
+# Subtest: Interfaz geométrica: cambiar magnitud/eje, zoom y PNG no cambian la tabla
+ok 87 - Interfaz geométrica: cambiar magnitud/eje, zoom y PNG no cambian la tabla
+  ---
+  duration_ms: 5.290071
+  type: 'test'
+  ...
+# Subtest: Interfaz geométrica: cualquier entrada principal invalida ambas modalidades
+ok 88 - Interfaz geométrica: cualquier entrada principal invalida ambas modalidades
+  ---
+  duration_ms: 7.680244
+  type: 'test'
+  ...
+# Subtest: Interfaz geométrica: restablecer recupera modos y valores iniciales
+ok 89 - Interfaz geométrica: restablecer recupera modos y valores iniciales
+  ---
+  duration_ms: 4.529338
+  type: 'test'
+  ...
+# Subtest: Interfaz geométrica: Plotly ausente no impide tabla/CSV y admite carga tardía
+ok 90 - Interfaz geométrica: Plotly ausente no impide tabla/CSV y admite carga tardía
+  ---
+  duration_ms: 6.588763
+  type: 'test'
+  ...
+# Subtest: Interfaz geométrica: promesa Plotly antigua no reactiva resultados invalidados
+ok 91 - Interfaz geométrica: promesa Plotly antigua no reactiva resultados invalidados
+  ---
+  duration_ms: 5.33572
+  type: 'test'
+  ...
+# Subtest: Referencia coaxial independiente: a=0.4 mm, b=1.6 mm
+ok 92 - Referencia coaxial independiente: a=0.4 mm, b=1.6 mm
+  ---
+  duration_ms: 2.991727
+  type: 'test'
+  ...
+# Subtest: Referencia coaxial independiente: a=0.6 mm, b=2.4 mm
+ok 93 - Referencia coaxial independiente: a=0.6 mm, b=2.4 mm
+  ---
+  duration_ms: 1.293514
+  type: 'test'
+  ...
+# Subtest: Referencia coaxial independiente: a=0.8 mm, b=3.2 mm
+ok 94 - Referencia coaxial independiente: a=0.8 mm, b=3.2 mm
+  ---
+  duration_ms: 0.239109
+  type: 'test'
+  ...
+# Subtest: Paramétrico: bifilar radius fixed, 10/100/500 puntos y dos muestreos
+ok 95 - Paramétrico: bifilar radius fixed, 10/100/500 puntos y dos muestreos
+  ---
+  duration_ms: 34.007827
+  type: 'test'
+  ...
+# Subtest: Paramétrico: bifilar separation fixed, 10/100/500 puntos y dos muestreos
+ok 96 - Paramétrico: bifilar separation fixed, 10/100/500 puntos y dos muestreos
+  ---
+  duration_ms: 30.027073
+  type: 'test'
+  ...
+# Subtest: Paramétrico: coaxial innerRadius fixed, 10/100/500 puntos y dos muestreos
+ok 97 - Paramétrico: coaxial innerRadius fixed, 10/100/500 puntos y dos muestreos
+  ---
+  duration_ms: 32.613305
+  type: 'test'
+  ...
+# Subtest: Paramétrico: coaxial innerRadius ratio, 10/100/500 puntos y dos muestreos
+ok 98 - Paramétrico: coaxial innerRadius ratio, 10/100/500 puntos y dos muestreos
+  ---
+  duration_ms: 19.04766
+  type: 'test'
+  ...
+# Subtest: Paramétrico: coaxial outerRadius fixed, 10/100/500 puntos y dos muestreos
+ok 99 - Paramétrico: coaxial outerRadius fixed, 10/100/500 puntos y dos muestreos
+  ---
+  duration_ms: 17.179332
+  type: 'test'
+  ...
+# Subtest: Paramétrico: placas width fixed, 10/100/500 puntos y dos muestreos
+ok 100 - Paramétrico: placas width fixed, 10/100/500 puntos y dos muestreos
+  ---
+  duration_ms: 18.639977
+  type: 'test'
+  ...
+# Subtest: Paramétrico: placas gap fixed, 10/100/500 puntos y dos muestreos
+ok 101 - Paramétrico: placas gap fixed, 10/100/500 puntos y dos muestreos
+  ---
+  duration_ms: 43.654235
+  type: 'test'
+  ...
+# Subtest: Geometría parcial inválida: no hay interpolaciones ni ceros sustitutivos
+ok 102 - Geometría parcial inválida: no hay interpolaciones ni ceros sustitutivos
+  ---
+  duration_ms: 2.247749
+  type: 'test'
+  ...
+# Subtest: Intervalo completamente inválido y dimensión fija no positiva quedan registrados
+ok 103 - Intervalo completamente inválido y dimensión fija no positiva quedan registrados
+  ---
+  duration_ms: 1.112272
+  type: 'test'
+  ...
+# Subtest: Se permite corregir la dimensión barrida de una configuración inicial inválida
+ok 104 - Se permite corregir la dimensión barrida de una configuración inicial inválida
+  ---
+  duration_ms: 0.579672
+  type: 'test'
+  ...
+# Subtest: Opciones inválidas, relación adimensional y dominio de cada variable
+ok 105 - Opciones inválidas, relación adimensional y dominio de cada variable
+  ---
+  duration_ms: 1.292783
+  type: 'test'
+  ...
+# Subtest: Dimensiones no representables se rechazan sin resultados ficticios
+ok 106 - Dimensiones no representables se rechazan sin resultados ficticios
+  ---
+  duration_ms: 1.754617
+  type: 'test'
+  ...
+# Subtest: Frecuencia fija/materiales inválidos se señalan en los campos principales
+ok 107 - Frecuencia fija/materiales inválidos se señalan en los campos principales
+  ---
+  duration_ms: 0.979523
+  type: 'test'
+  ...
+# Subtest: Coaxial b/a=4: atenuación decreciente, L/C constantes y |Z0| casi constante
+ok 108 - Coaxial b/a=4: atenuación decreciente, L/C constantes y |Z0| casi constante
+  ---
+  duration_ms: 0.834775
+  type: 'test'
+  ...
+# Subtest: Coaxial con b fijo admite atenuación no monótona
+ok 109 - Coaxial con b fijo admite atenuación no monótona
+  ---
+  duration_ms: 17.422398
+  type: 'test'
+  ...
+# Subtest: Unidades: frecuencia equivalente, dimensiones mm y longitud sin multiplicación
+ok 110 - Unidades: frecuencia equivalente, dimensiones mm y longitud sin multiplicación
+  ---
+  duration_ms: 1.878393
+  type: 'test'
+  ...
+# Subtest: No se altera el barrido de frecuencia ni se pierden advertencias
+ok 111 - No se altera el barrido de frecuencia ni se pierden advertencias
+  ---
+  duration_ms: 12.750955
+  type: 'test'
+  ...
+# Subtest: CSV: dimensiones vinculadas, frecuencia, precisión completa y blancos de rechazo
+ok 112 - CSV: dimensiones vinculadas, frecuencia, precisión completa y blancos de rechazo
+  ---
+  duration_ms: 5.521389
+  type: 'test'
+  ...
+# Subtest: CSV: ceros físicos y errores con comas, comillas y saltos se conservan
+ok 113 - CSV: ceros físicos y errores con comas, comillas y saltos se conservan
+  ---
+  duration_ms: 5.19579
+  type: 'test'
+  ...
+# Subtest: Referencia compleja independiente: Z/Y=1−j y ZY=−1+j
+ok 114 - Referencia compleja independiente: Z/Y=1−j y ZY=−1+j
+  ---
+  duration_ms: 2.437283
+  type: 'test'
+  ...
+# Subtest: Referencia coaxial PTFE, 100 MHz: comparación con Python cmath
+ok 115 - Referencia coaxial PTFE, 100 MHz: comparación con Python cmath
+  ---
+  duration_ms: 0.571699
+  type: 'test'
+  ...
+# Subtest: coaxial: ramas pasivas, partes imaginarias, velocidades y unidades
+ok 116 - coaxial: ramas pasivas, partes imaginarias, velocidades y unidades
+  ---
+  duration_ms: 0.348244
+  type: 'test'
+  ...
+# Subtest: coaxial: línea ideal R′=G′=0 y vₚ=c/√εr
+ok 117 - coaxial: línea ideal R′=G′=0 y vₚ=c/√εr
+  ---
+  duration_ms: 0.245128
+  type: 'test'
+  ...
+# Subtest: coaxial: G′=0 conserva pérdidas conductoras y fase compleja
+ok 118 - coaxial: G′=0 conserva pérdidas conductoras y fase compleja
+  ---
+  duration_ms: 0.361604
+  type: 'test'
+  ...
+# Subtest: coaxial: resultados primarios sin mutaciones y longitud independiente
+ok 119 - coaxial: resultados primarios sin mutaciones y longitud independiente
+  ---
+  duration_ms: 1.031801
+  type: 'test'
+  ...
+# Subtest: bifilar: ramas pasivas, partes imaginarias, velocidades y unidades
+ok 120 - bifilar: ramas pasivas, partes imaginarias, velocidades y unidades
+  ---
+  duration_ms: 0.250207
+  type: 'test'
+  ...
+# Subtest: bifilar: línea ideal R′=G′=0 y vₚ=c/√εr
+ok 121 - bifilar: línea ideal R′=G′=0 y vₚ=c/√εr
+  ---
+  duration_ms: 0.21315
+  type: 'test'
+  ...
+# Subtest: bifilar: G′=0 conserva pérdidas conductoras y fase compleja
+ok 122 - bifilar: G′=0 conserva pérdidas conductoras y fase compleja
+  ---
+  duration_ms: 1.331281
+  type: 'test'
+  ...
+# Subtest: bifilar: resultados primarios sin mutaciones y longitud independiente
+ok 123 - bifilar: resultados primarios sin mutaciones y longitud independiente
+  ---
+  duration_ms: 0.524789
+  type: 'test'
+  ...
+# Subtest: placas: ramas pasivas, partes imaginarias, velocidades y unidades
+ok 124 - placas: ramas pasivas, partes imaginarias, velocidades y unidades
+  ---
+  duration_ms: 0.329365
+  type: 'test'
+  ...
+# Subtest: placas: línea ideal R′=G′=0 y vₚ=c/√εr
+ok 125 - placas: línea ideal R′=G′=0 y vₚ=c/√εr
+  ---
+  duration_ms: 0.088052
+  type: 'test'
+  ...
+# Subtest: placas: G′=0 conserva pérdidas conductoras y fase compleja
+ok 126 - placas: G′=0 conserva pérdidas conductoras y fase compleja
+  ---
+  duration_ms: 0.085229
+  type: 'test'
+  ...
+# Subtest: placas: resultados primarios sin mutaciones y longitud independiente
+ok 127 - placas: resultados primarios sin mutaciones y longitud independiente
+  ---
+  duration_ms: 0.422495
+  type: 'test'
+  ...
+# Subtest: Aproximaciones analíticas independientes de bajas pérdidas
+ok 128 - Aproximaciones analíticas independientes de bajas pérdidas
+  ---
+  duration_ms: 0.242615
+  type: 'test'
+  ...
+# Subtest: Pérdidas diminutas: α e Im(Z0) no se pierden por cancelación
+ok 129 - Pérdidas diminutas: α e Im(Z0) no se pierden por cancelación
+  ---
+  duration_ms: 0.223075
+  type: 'test'
+  ...
+# Subtest: Condición de Heaviside R/L=G/C: Z0 real y propagación exacta
+ok 130 - Condición de Heaviside R/L=G/C: Z0 real y propagación exacta
+  ---
+  duration_ms: 0.279661
+  type: 'test'
+  ...
+# Subtest: Pérdida dieléctrica dominante admite Im(Z0)>0; fase en grados coherente
+ok 131 - Pérdida dieléctrica dominante admite Im(Z0)>0; fase en grados coherente
+  ---
+  duration_ms: 7.318921
+  type: 'test'
+  ...
+# Subtest: Escalado por unidad de longitud: Z0 invariante, gamma proporcional
+ok 132 - Escalado por unidad de longitud: Z0 invariante, gamma proporcional
+  ---
+  duration_ms: 1.083308
+  type: 'test'
+  ...
+# Subtest: Hz, kHz, MHz y GHz equivalentes dan secundarios idénticos
+ok 133 - Hz, kHz, MHz y GHz equivalentes dan secundarios idénticos
+  ---
+  duration_ms: 0.667253
+  type: 'test'
+  ...
+# Subtest: Escalas extremas: no materializa ZY o Z/Y antes de extraer sus raíces
+ok 134 - Escalas extremas: no materializa ZY o Z/Y antes de extraer sus raíces
+  ---
+  duration_ms: 0.338799
+  type: 'test'
+  ...
+# Subtest: Entradas pasivas inválidas y salidas no representables fallan explícitamente
+ok 135 - Entradas pasivas inválidas y salidas no representables fallan explícitamente
+  ---
+  duration_ms: 1.112352
+  type: 'test'
+  ...
+# Subtest: Barrido: conversión Hz/kHz/MHz/GHz equivalente
+ok 136 - Barrido: conversión Hz/kHz/MHz/GHz equivalente
+  ---
+  duration_ms: 2.516903
+  type: 'test'
+  ...
+# Subtest: Muestras lineales, extremos exactos y límites de 10–500 puntos
+ok 137 - Muestras lineales, extremos exactos y límites de 10–500 puntos
+  ---
+  duration_ms: 1.135436
+  type: 'test'
+  ...
+# Subtest: Muestras logarítmicas: razón constante y extremos incluidos
+ok 138 - Muestras logarítmicas: razón constante y extremos incluidos
+  ---
+  duration_ms: 0.233711
+  type: 'test'
+  ...
+# Subtest: Validación del intervalo, puntos enteros, unidad, escala y rango numérico
+ok 139 - Validación del intervalo, puntos enteros, unidad, escala y rango numérico
+  ---
+  duration_ms: 4.852424
+  type: 'test'
+  ...
+# Subtest: bifilar: cada punto coincide exactamente con ambos motores existentes
+ok 140 - bifilar: cada punto coincide exactamente con ambos motores existentes
+  ---
+  duration_ms: 3.127361
+  type: 'test'
+  ...
+# Subtest: coaxial: cada punto coincide exactamente con ambos motores existentes
+ok 141 - coaxial: cada punto coincide exactamente con ambos motores existentes
+  ---
+  duration_ms: 0.836768
+  type: 'test'
+  ...
+# Subtest: placas: cada punto coincide exactamente con ambos motores existentes
+ok 142 - placas: cada punto coincide exactamente con ambos motores existentes
+  ---
+  duration_ms: 0.860583
+  type: 'test'
+  ...
+# Subtest: No muta configuración, geometría ni opciones; snapshot independiente
+ok 143 - No muta configuración, geometría ni opciones; snapshot independiente
+  ---
+  duration_ms: 2.682833
+  type: 'test'
+  ...
+# Subtest: Avisos por punto, conteo y rango de frecuencias conservados
+ok 144 - Avisos por punto, conteo y rango de frecuencias conservados
+  ---
+  duration_ms: 15.230443
+  type: 'test'
+  ...
+# Subtest: Errores compartidos se rechazan antes de generar resultados
+ok 145 - Errores compartidos se rechazan antes de generar resultados
+  ---
+  duration_ms: 0.476567
+  type: 'test'
+  ...
+# Subtest: Puntos numéricamente inválidos se registran sin abortar el barrido
+ok 146 - Puntos numéricamente inválidos se registran sin abortar el barrido
+  ---
+  duration_ms: 0.669496
+  type: 'test'
+  ...
+# Subtest: CSV: encabezados y unidades, precisión round-trip, metadatos y avisos
+ok 147 - CSV: encabezados y unidades, precisión round-trip, metadatos y avisos
+  ---
+  duration_ms: 1.864102
+  type: 'test'
+  ...
+# Subtest: CSV: rechazo vacío, cero físico conservado y comillas/saltos escapados
+ok 148 - CSV: rechazo vacío, cero físico conservado y comillas/saltos escapados
+  ---
+  duration_ms: 1.196037
+  type: 'test'
+  ...
+# Subtest: Gráficas: once magnitudes, unidades separadas, zoom, hover y PNG
+ok 149 - Gráficas: once magnitudes, unidades separadas, zoom, hover y PNG
+  ---
+  duration_ms: 2.154609
+  type: 'test'
+  ...
+# Subtest: Gráficas: huecos sin interpolación ni mutación del análisis
+ok 150 - Gráficas: huecos sin interpolación ni mutación del análisis
+  ---
+  duration_ms: 0.973012
+  type: 'test'
+  ...
+1..150
+# tests 150
+# suites 0
+# pass 150
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1437.761811

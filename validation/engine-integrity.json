@@ -1,0 +1,13 @@
+{
+  "baselineCommit": "3a5b754dd5d82ebf30a1c604e9f7c6774d958971",
+  "engines": {
+    "calculations.js": {
+      "unchangedFromV04": true,
+      "sha256": "68c87030bbd97472f7d2211641368b4e4aaa64c3ad2b20893caa79bfef91c6dc"
+    },
+    "secondary.js": {
+      "unchangedFromV04": true,
+      "sha256": "f27f4b710960ac2ff482217e5f8f4ed0859fd8b6262248b7f0cafded91346ac6"
+    }
+  }
+}

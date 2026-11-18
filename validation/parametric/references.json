@@ -1,0 +1,182 @@
+{
+  "configuration": {
+    "type": "coaxial",
+    "frequency": 100,
+    "frequencyUnit": "MHz",
+    "conductivity": 58000000,
+    "relativePermittivity": 2.1,
+    "lossTangent": 0.0002,
+    "length": 100,
+    "geometry": {
+      "innerRadius": 0.5,
+      "outerRadius": 2
+    }
+  },
+  "cases": [
+    {
+      "aMm": 0.4,
+      "bMm": 1.6,
+      "frequencyHz": 100000000,
+      "primary": {
+        "R": 1.297585622629025,
+        "L": 2.7725887218737085e-7,
+        "C": 8.427377271218006e-11,
+        "G": 0.000010590154609715234,
+        "skinDepth": 0.000006608549310516836,
+        "surfaceResistance": 0.0026089506940512527,
+        "frequencyHz": 100000000,
+        "omega": 628318530.7179586,
+        "epsilon": 1.859379441948e-11,
+        "mu": 0.00000125663706127,
+        "warnings": [
+          {
+            "code": "coaxial-wall",
+            "message": "No se especificó el espesor del conductor exterior. El modelo de R′ requiere una pared mucho más gruesa que δ; esa condición no se puede verificar."
+          }
+        ]
+      },
+      "secondary": {
+        "Z": {
+          "re": 1.297585622629025,
+          "im": 174.20688720128712
+        },
+        "Y": {
+          "re": 0.000010590154609715234,
+          "im": 0.052950773048576164
+        },
+        "Z0": {
+          "re": 57.35874954799835,
+          "im": -0.20788033359271266
+        },
+        "gamma": {
+          "re": 0.011614862391263267,
+          "im": 3.037187928181308
+        },
+        "alpha": 0.011614862391263267,
+        "beta": 3.037187928181308,
+        "phaseVelocity": 206875091.55687994,
+        "wavelength": 2.0687509155687995,
+        "alphaDb": 0.10088669473051273,
+        "Z0Magnitude": 57.359126248079264,
+        "Z0PhaseRadians": -0.0036241972684920585,
+        "Z0PhaseDegrees": -0.2076512076074362
+      },
+      "referenceAlphaDb": 0.1008867,
+      "absoluteError": 5.269487263204198e-9,
+      "absoluteTolerance": 5e-8
+    },
+    {
+      "aMm": 0.6,
+      "bMm": 2.4,
+      "frequencyHz": 100000000,
+      "primary": {
+        "R": 0.8650570817526834,
+        "L": 2.7725887218737085e-7,
+        "C": 8.427377271218006e-11,
+        "G": 0.000010590154609715234,
+        "skinDepth": 0.000006608549310516836,
+        "surfaceResistance": 0.0026089506940512527,
+        "frequencyHz": 100000000,
+        "omega": 628318530.7179586,
+        "epsilon": 1.859379441948e-11,
+        "mu": 0.00000125663706127,
+        "warnings": [
+          {
+            "code": "coaxial-wall",
+            "message": "No se especificó el espesor del conductor exterior. El modelo de R′ requiere una pared mucho más gruesa que δ; esa condición no se puede verificar."
+          }
+        ]
+      },
+      "secondary": {
+        "Z": {
+          "re": 0.8650570817526834,
+          "im": 174.20688720128712
+        },
+        "Y": {
+          "re": 0.000010590154609715234,
+          "im": 0.052950773048576164
+        },
+        "Z0": {
+          "re": 57.35852144162463,
+          "im": -0.13667550224131572
+        },
+        "gamma": {
+          "re": 0.007844509110731542,
+          "im": 3.0371766038426555
+        },
+        "alpha": 0.007844509110731542,
+        "beta": 3.0371766038426555,
+        "phaseVelocity": 206875862.9060312,
+        "wavelength": 2.068758629060312,
+        "alphaDb": 0.06813740613581416,
+        "Z0Magnitude": 57.35868427851379,
+        "Z0PhaseRadians": -0.0023828236874278673,
+        "Z0PhaseDegrees": -0.13652574061341688
+      },
+      "referenceAlphaDb": 0.0681374,
+      "absoluteError": 6.135814162311348e-9,
+      "absoluteTolerance": 5e-8
+    },
+    {
+      "aMm": 0.8,
+      "bMm": 3.2,
+      "frequencyHz": 100000000,
+      "primary": {
+        "R": 0.6487928113145125,
+        "L": 2.7725887218737085e-7,
+        "C": 8.427377271218006e-11,
+        "G": 0.000010590154609715234,
+        "skinDepth": 0.000006608549310516836,
+        "surfaceResistance": 0.0026089506940512527,
+        "frequencyHz": 100000000,
+        "omega": 628318530.7179586,
+        "epsilon": 1.859379441948e-11,
+        "mu": 0.00000125663706127,
+        "warnings": [
+          {
+            "code": "coaxial-wall",
+            "message": "No se especificó el espesor del conductor exterior. El modelo de R′ requiere una pared mucho más gruesa que δ; esa condición no se puede verificar."
+          }
+        ]
+      },
+      "secondary": {
+        "Z": {
+          "re": 0.6487928113145125,
+          "im": 174.20688720128712
+        },
+        "Y": {
+          "re": 0.000010590154609715234,
+          "im": 0.052950773048576164
+        },
+        "Z0": {
+          "re": 57.35844053528858,
+          "im": -0.10107281577789567
+        },
+        "gamma": {
+          "re": 0.005959318483076765,
+          "im": 3.037172696827571
+        },
+        "alpha": 0.005959318483076765,
+        "beta": 3.037172696827571,
+        "phaseVelocity": 206876129.0308774,
+        "wavelength": 2.068761290308774,
+        "alphaDb": 0.05176264034400478,
+        "Z0Magnitude": 57.358529586752184,
+        "Z0PhaseRadians": -0.001762124461918439,
+        "Z0PhaseDegrees": -0.1009622946446877
+      },
+      "referenceAlphaDb": 0.0517626,
+      "absoluteError": 4.034400478275524e-8,
+      "absoluteTolerance": 5e-8
+    }
+  ],
+  "tableExample": {
+    "points": 11,
+    "referenceRows": [
+      0,
+      5,
+      10
+    ],
+    "successCount": 11
+  }
+}

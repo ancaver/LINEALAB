@@ -1,0 +1,30 @@
+{
+  "tool": "Python csv.DictReader est\u00e1ndar; no Excel/LibreOffice",
+  "files": [
+    {
+      "file": "desktop-geometry.csv",
+      "rows": 11,
+      "columns": 32,
+      "sha256": "18c908cb0d5aa61d905bb8c28b09c99fbda620eda9506779953adb61d6cdadd6"
+    },
+    {
+      "file": "desktop-table.csv",
+      "rows": 11,
+      "columns": 32,
+      "sha256": "18c908cb0d5aa61d905bb8c28b09c99fbda620eda9506779953adb61d6cdadd6"
+    },
+    {
+      "file": "mobile-geometry.csv",
+      "rows": 11,
+      "columns": 32,
+      "sha256": "18c908cb0d5aa61d905bb8c28b09c99fbda620eda9506779953adb61d6cdadd6"
+    },
+    {
+      "file": "mobile-table.csv",
+      "rows": 11,
+      "columns": 32,
+      "sha256": "18c908cb0d5aa61d905bb8c28b09c99fbda620eda9506779953adb61d6cdadd6"
+    }
+  ],
+  "status": "passed"
+}

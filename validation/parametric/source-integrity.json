@@ -1,0 +1,58 @@
+{
+  "source": "LINEALAB-v1.0.zip recibido del usuario",
+  "archiveSHA256": "71f0553e8e864c53b311d6a41fee946fb726bd3ce965fce9af2f4b4875bf8181",
+  "files": {
+    "calculations.js": {
+      "unchangedFromUploadedZIP": true,
+      "sha256": "68c87030bbd97472f7d2211641368b4e4aaa64c3ad2b20893caa79bfef91c6dc"
+    },
+    "secondary.js": {
+      "unchangedFromUploadedZIP": true,
+      "sha256": "f27f4b710960ac2ff482217e5f8f4ed0859fd8b6262248b7f0cafded91346ac6"
+    },
+    "sweep.js": {
+      "unchangedFromUploadedZIP": true,
+      "sha256": "ee98fd2e936dbc907c0975138b8f620416648dcd373ad10213c26c1f07472cf8"
+    },
+    "charts.js": {
+      "unchangedFromUploadedZIP": true,
+      "sha256": "a65eece7c2ba316f8df45e22005b70aa8bb071e5c60fd4bb07c71b34adc2f824"
+    },
+    "app.js": {
+      "unchangedFromUploadedZIP": true,
+      "sha256": "235f52a176ea28c9b40ad4e1ff1b75ea0f1c34a4cf099c92a09f053e4f59a1d8"
+    },
+    "analysis.js": {
+      "unchangedFromUploadedZIP": true,
+      "sha256": "42a2252e4e41eb1d77f14c9c25e81ef1b93038ed02afc2bf9f1b610de6c317d7"
+    },
+    "viewer3d.js": {
+      "unchangedFromUploadedZIP": true,
+      "sha256": "90a84a80a34df7b0234379340755c303d1190b4bf7bba8e8634326a4a5a3f853"
+    },
+    "vendor/plotly-LICENSE.txt": {
+      "unchangedFromUploadedZIP": true,
+      "sha256": "67a26cf80f03ff388f26945dfc1f6caed1a0746ff43871190339b3aee49b94bb"
+    },
+    "vendor/plotly-basic-2.35.2.min.js": {
+      "unchangedFromUploadedZIP": true,
+      "sha256": "138c2e81014b979dc00867a93da55b7605a17495ee78dd7afb433b7f021dfcfa"
+    },
+    "vendor/three-0.147.0-OrbitControls.js": {
+      "unchangedFromUploadedZIP": true,
+      "sha256": "b4c6e53f98538535b11fd6655627d47fb5877b3ad972568bff0a7026c4b6d5c4"
+    },
+    "vendor/three-0.147.0-RoomEnvironment.js": {
+      "unchangedFromUploadedZIP": true,
+      "sha256": "251b4e779abb5b432f99a326878fe239747c1fe55f390933085fc3deb20d2cea"
+    },
+    "vendor/three-0.147.0.min.js": {
+      "unchangedFromUploadedZIP": true,
+      "sha256": "f34446bf875b5fb0dcd93819ffe1d9e182d46634ee855f5d904c6c4ac7cdbc95"
+    },
+    "vendor/three-LICENSE.txt": {
+      "unchangedFromUploadedZIP": true,
+      "sha256": "fbf3943930dacbf56aabb8dc5d816440bd16aa6f4cc78ddbdf12106ee1807832"
+    }
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "generatedAtUTC": "2026-11-18T22:03:22.001Z",
+  "harness": "Chromium real en documento in-memory, recursos locales íntegros, sin navegación HTTP/file://",
+  "offline": true,
+  "contexts": [
+    {
+      "width": 1440,
+      "mobileEmulated": false,
+      "matrix": [
+        {
+          "type": "bifilar",
+          "variable": "radius",
+          "mode": "fixed",
+          "points": 10
+        },
+        {
+          "type": "bifilar",
+          "variable": "radius",
+          "mode": "fixed",
+          "points": 100
+        },
+        {
+          "type": "bifilar",
+          "variable": "radius",
+          "mode": "fixed",
+          "points": 500
+        },
+        {
+          "type": "bifilar",
+          "variable": "separation",
+          "mode": "fixed",
+          "points": 10
+        },
+        {
+          "type": "bifilar",
+          "variable": "separation",
+          "mode": "fixed",
+          "points": 100
+        },
+        {
+          "type": "bifilar",
+          "variable": "separation",
+          "mode": "fixed",
+          "points": 500
+        },
+        {
+          "type": "coaxial",
+          "variable": "innerRadius",
+          "mode": "fixed",
+          "points": 10
+        },
+        {
+          "type": "coaxial",
+          "variable": "innerRadius",
+          "mode": "fixed",
+          "points": 100
+        },
+        {
+          "type": "coaxial",
+          "variable": "innerRadius",
+          "mode": "fixed",
+          "points": 500
+        },
+        {
+          "type": "coaxial",
+          "variable": "innerRadius",
+          "mode": "ratio",
+          "points": 10
+        },
+        {
+          "type": "coaxial",
+          "variable": "innerRadius",
+          "mode": "ratio",
+          "points": 100
+        },
+        {
+          "type": "coaxial",
+          "variable": "innerRadius",
+          "mode": "ratio",
+          "points": 500
+        },
+        {
+          "type": "coaxial",
+          "variable": "outerRadius",
+          "mode": "fixed",
+          "points": 10
+        },
+        {
+          "type": "coaxial",
+          "variable": "outerRadius",
+          "mode": "fixed",
+          "points": 100
+        },
+        {
+          "type": "coaxial",
+          "variable": "outerRadius",
+          "mode": "fixed",
+          "points": 500
+        },
+        {
+          "type": "placas",
+          "variable": "width",
+          "mode": "fixed",
+          "points": 10
+        },
+        {
+          "type": "placas",
+          "variable": "width",
+          "mode": "fixed",
+          "points": 100
+        },
+        {
+          "type": "placas",
+          "variable": "width",
+          "mode": "fixed",
+          "points": 500
+        },
+        {
+          "type": "placas",
+          "variable": "gap",
+          "mode": "fixed",
+          "points": 10
+        },
+        {
+          "type": "placas",
+          "variable": "gap",
+          "mode": "fixed",
+          "points": 100
+        },
+        {
+          "type": "placas",
+          "variable": "gap",
+          "mode": "fixed",
+          "points": 500
+        }
+      ],
+      "references": [
+        {
+          "a": 0.4,
+          "geometry": "a = 0.4 · b = 1.6",
+          "alphaDb": 0.10088669
+        },
+        {
+          "a": 0.6,
+          "geometry": "a = 0.6 · b = 2.4",
+          "alphaDb": 0.068137406
+        },
+        {
+          "a": 0.8,
+          "geometry": "a = 0.8 · b = 3.2",
+          "alphaDb": 0.05176264
+        }
+      ],
+      "magnitudes": 11,
+      "hoverExactSI": true,
+      "zoomAndReset": true,
+      "layout": {
+        "page": 1440,
+        "viewport": 1440,
+        "table": 1886,
+        "container": 980
+      },
+      "identicalCSVs": true,
+      "png": {
+        "width": 2200,
+        "height": 1200,
+        "bytes": 133013
+      },
+      "themePreservesResults": true,
+      "rejectedGapsAndEmpty": true,
+      "exactZero": true,
+      "validationAndReset": true,
+      "pageErrors": [],
+      "httpRequests": []
+    },
+    {
+      "width": 390,
+      "mobileEmulated": true,
+      "matrix": [
+        {
+          "type": "bifilar",
+          "variable": "radius",
+          "mode": "fixed",
+          "points": 10
+        },
+        {
+          "type": "bifilar",
+          "variable": "radius",
+          "mode": "fixed",
+          "points": 100
+        },
+        {
+          "type": "bifilar",
+          "variable": "radius",
+          "mode": "fixed",
+          "points": 500
+        },
+        {
+          "type": "bifilar",
+          "variable": "separation",
+          "mode": "fixed",
+          "points": 10
+        },
+        {
+          "type": "bifilar",
+          "variable": "separation",
+          "mode": "fixed",
+          "points": 100
+        },
+        {
+          "type": "bifilar",
+          "variable": "separation",
+          "mode": "fixed",
+          "points": 500
+        },
+        {
+          "type": "coaxial",
+          "variable": "innerRadius",
+          "mode": "fixed",
+          "points": 10
+        },
+        {
+          "type": "coaxial",
+          "variable": "innerRadius",
+          "mode": "fixed",
+          "points": 100
+        },
+        {
+          "type": "coaxial",
+          "variable": "innerRadius",
+          "mode": "fixed",
+          "points": 500
+        },
+        {
+          "type": "coaxial",
+          "variable": "innerRadius",
+          "mode": "ratio",
+          "points": 10
+        },
+        {
+          "type": "coaxial",
+          "variable": "innerRadius",
+          "mode": "ratio",
+          "points": 100
+        },
+        {
+          "type": "coaxial",
+          "variable": "innerRadius",
+          "mode": "ratio",
+          "points": 500
+        },
+        {
+          "type": "coaxial",
+          "variable": "outerRadius",
+          "mode": "fixed",
+          "points": 10
+        },
+        {
+          "type": "coaxial",
+          "variable": "outerRadius",
+          "mode": "fixed",
+          "points": 100
+        },
+        {
+          "type": "coaxial",
+          "variable": "outerRadius",
+          "mode": "fixed",
+          "points": 500
+        },
+        {
+          "type": "placas",
+          "variable": "width",
+          "mode": "fixed",
+          "points": 10
+        },
+        {
+          "type": "placas",
+          "variable": "width",
+          "mode": "fixed",
+          "points": 100
+        },
+        {
+          "type": "placas",
+          "variable": "width",
+          "mode": "fixed",
+          "points": 500
+        },
+        {
+          "type": "placas",
+          "variable": "gap",
+          "mode": "fixed",
+          "points": 10
+        },
+        {
+          "type": "placas",
+          "variable": "gap",
+          "mode": "fixed",
+          "points": 100
+        },
+        {
+          "type": "placas",
+          "variable": "gap",
+          "mode": "fixed",
+          "points": 500
+        }
+      ],
+      "references": [
+        {
+          "a": 0.4,
+          "geometry": "a = 0.4 · b = 1.6",
+          "alphaDb": 0.10088669
+        },
+        {
+          "a": 0.6,
+          "geometry": "a = 0.6 · b = 2.4",
+          "alphaDb": 0.068137406
+        },
+        {
+          "a": 0.8,
+          "geometry": "a = 0.8 · b = 3.2",
+          "alphaDb": 0.05176264
+        }
+      ],
+      "magnitudes": 11,
+      "hoverExactSI": true,
+      "zoomAndReset": true,
+      "layout": {
+        "page": 390,
+        "viewport": 390,
+        "table": 1886,
+        "container": 338
+      },
+      "identicalCSVs": true,
+      "png": {
+        "width": 2200,
+        "height": 1200,
+        "bytes": 133013
+      },
+      "themePreservesResults": true,
+      "rejectedGapsAndEmpty": true,
+      "exactZero": true,
+      "validationAndReset": true,
+      "pageErrors": [],
+      "httpRequests": []
+    }
+  ],
+  "pending": [
+    "Navegación al sitio publicado y file://",
+    "Móvil físico, Safari/Firefox",
+    "Apertura del CSV geométrico en Excel/LibreOffice",
+    "GPU física"
+  ],
+  "browser": "156.0.8078.79",
+  "playwright": "1.62.1",
+  "status": "passed"
+}
